@@ -1,0 +1,39 @@
+
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(../font/Helvetica\ Neue);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background-color-01: #545454;
+    --logo-color: blue;
+    --background-color-02: black;
+    --nav-text-color: #3f3e3e;
+}  
+
+
+
+
+
+ /* navbar-section-start===============  */
+
+.navbar-brand {
+    color: var(--logo-color) !important;
+}
+
+.navbar-nav li{
+    margin: 0px 10px;
+}
+.navbar-nav li a{
+ text-decoration: none;
+ color: var(--nav-text-color);
+ font-weight: 500;
+}
+    
+ /* navbar-section-end===============  */
