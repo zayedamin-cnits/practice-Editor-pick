@@ -24,25 +24,21 @@
   /* navbar-section-start===============  */
 
 
-button:focus,
+/* button:focus,
 .navbar-toggler:focus{
     outline: 0;
     box-shadow: none;
-}
+} */
 
 #navbar-section{
     background-color: #e7e6e6;
-    padding: 8px 0;
+    
 }
-
-
-
-   
-
-
-
+.navbar-brand {
+    color: blue !important;
+}
 #navbar-section .navbar-nav .nav-item{
-    margin: 0 10px;
+   padding: 0px 15px;
 }
 #navbar-section .navbar-nav .nav-item i{
  font-size: 14px;
@@ -54,15 +50,21 @@ button:focus,
     font-weight: 600;
     color: var(--nav-text-color);
     display: inline-block;
+    
+ 
 }
 #navbar-section .dropdown-menu {
-    margin-top: 20px;
+    padding-top: 20px;
     border-radius: 10px;
+  
+
+    
 }
 #navbar-section .dropdown-menu .dropdown-item{
     margin-bottom: 10px;
     width: 200px;
-  
+    
+   
 }
 #navbar-section .dropdown-menu .dropdown-item:hover{
   background-color: rgb(11, 105, 90);
@@ -70,19 +72,23 @@ button:focus,
 }
 #navbar-section .dropdown-mega .dropdown-menu{
     width: 100%;
+   
 }
 
 #navbar-section .dropdown-mega h5{
     padding-bottom: 12px;
-border-bottom: 1px solid rgba(0,0,0,.125);
+/* border-bottom: 1px solid rgba(0,0,0,.125); */
 margin: 0;
+font-size: 15px;
 
 }
 #navbar-section .list-group-item{
-    font-size: 16px;
+    font-size: 15px;
    border: 0;
-   border-bottom: 1px solid rgba(0,0,0,.125);
+   color: var(--background-color-01);
    padding: 12px 0;
+   font-weight: 500;
+   margin-top: -5px;
 }
 
 @media screen and (max-width:991px){
@@ -101,15 +107,139 @@ margin: 0;
 margin: 0px 12px;
 font-size: 18px;
 }
-
-
- /* navbar-section-end===============  */
-
 .dropdown:hover > .dropdown-menu{
-    display: block;
+    display: block;   
 }
-
 .dropdown-mega:hover > .dropdown-menu{
     display: block;
     left: 0;
 }
+
+.mega-boost-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.mega-boost-text span{
+font-size: 12px;
+font-weight: 500;
+color: var(--background-color-01);
+
+}
+.mega-boost-text span:nth-child(2){
+    margin-left: 15px;
+}
+.mega-boost-text h5{
+    padding-top: 10px;
+}
+.mega-boost-text p{
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+   color: var(--background-color-01);
+}
+ /* navbar-section-end===============  */
+
+
+ /* hero-section-start================ */
+ #hero-section{
+    padding: 80px 0px;
+ 
+ }
+ #hero-section p{
+    font-size: 20px;
+    color: var(--background-color-01);
+    font-weight: 500;
+ }
+ /* hero-section-end================ */
+ 
+
+ /* newest-section-start=============== */
+ /* newest-section-end=============== */
+ 
+
+ #newest-section {
+    padding: 80px 0;
+    background-color: #9e9d9d;
+  }
+  
+
+  
+  .content-area {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 6px;
+  }
+.content-top-img{
+    position: relative;
+}
+.content-top-img-arow{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+ .img-area{
+    background-color: #fff;
+ 
+    position: relative;
+    padding: 30px 0px;
+ }
+  .img-area p {
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--black);
+    font-family: var(--primary-font);
+    background-color: #eff6ff;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .img-area img {
+    width: 60px !important;
+    height: 60px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;   
+  top: -30px;
+  left: 0;
+  right: 0;
+
+  }
+  
+  .img-area h4 {
+    text-align: center;
+    font-size: 1.3em;
+    color: var(--black);
+    font-family: var(--header-font);
+    margin-top: 10px;
+  }
+  
+  .owl-dots {
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .owl-dot {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: rgb(180, 178, 178) !important;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+  
+  .owl-dot.active {
+    background-color: var(--navy-blue) !important;
+  }
+  
+  @media screen and (max-width: 990px) {
+    .testimonial-header h1 {
+      font-size: 2em;
+    }
+  }
+  
+  /* testimonial */
+  
+  
