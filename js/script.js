@@ -6,6 +6,8 @@ $("#slider").owlCarousel({
     margin: 15,
     nav: true,
     autoplay: true,
+ 
+    dots:false,
     responsive: {
       0: {
         items: 1,
