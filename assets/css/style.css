@@ -22,7 +22,7 @@
   #navbar-section{
     background-color: #e7e6e6;
     line-height: 50px;
-    
+
     
 }
   .main-wrapper img{
@@ -32,15 +32,21 @@
 .main-wrapper a{
     color: #000;
     text-decoration: none;
+    border-radius: 10px;
 }
 .main-wrapper ul li{
     list-style-type: none;
-    padding: 15px 0px 0px 0px !important;
+    
   
 }
+.main-wrapper ul li a:hover{
+    background-color: #eeeaea;
+
+}
 .navbar-navb li a{
-    font-size: 18px !important;
-   
+    font-size: 16px !important;
+    font-weight: 500;  
+    color: var(--nav-text-color) !important;
 }
 .navbar-main{
     background: #fff;
@@ -48,11 +54,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;    
     max-height: 100vh;
     display: flex;
     flex-direction: column;
     z-index: 10;
+    
 }
 .brand-and-icon {
     display: flex;
@@ -87,22 +94,23 @@
 .navbar-collapse-ar{
     overflow-y: scroll;
     display: none;
+ 
 }
-.navbar-nav > li > a{
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 700;
-    display: block;
-    padding: 0.6rem 0;
-    margin: 0.2rem 0;
-    border-bottom: 1px solid #ddd;
-    border-radius: 1px;
-    position: relative;
-    transition: all 0.4s ease;
+
+
+
+
+.navbar-navb{
+    margin-left: 10px;
+    margin-top: 20px;
+    margin: 0;
+    padding: 0;
+}
+.navbar-navb li{
+    padding: 10px 0px;
 }
 .drop-icon{
-    /* position: absolute; */
-    /* right: 10px; */
+  
     top: 45%;
     transform: translateY(-50%);
     font-size: 12px;
@@ -110,6 +118,7 @@
 }
 .navbar-navb > li > a:hover{
     opacity: 0.7;
+
 }
 .sub-menu h4{
     text-transform: capitalize;
@@ -118,29 +127,35 @@
 }
 .sub-menu ul li{
     text-transform: capitalize;
-    padding: 0.2rem 0;
-    margin: 0.2rem 0;
+    padding:1px 0px;
+ 
     font-size: 0.95rem;
 }
 .sub-menu ul li a{
     opacity: 0.8;
     transition: all 0.5s ease;
-    
+
 }
-.sub-menu ul li a:hover{
-    padding-left: 14px;
-    opacity: 0.9;
+.sub-menu-sort ul li{
+    text-transform: capitalize;
+    padding:1px 0px;
+ 
+    font-size: 0.95rem;
 }
-.sub-menu-sort ul li a:hover{
-    padding-left: 0px !important;
-    opacity: 0.9;
+.sub-menu-sort ul li a{
+    opacity: 0.8;
+    transition: all 0.5s ease;
+
 }
+
+
 .sub-menu{
     display: none;
 
 }
  .sub-menu-sort{
     display: none;
+    
  }
 
 .sub-menu-item{
@@ -154,33 +169,8 @@
     font-size: 16px !important;
     
 }
-.sub-menu-item:nth-child(3){
-    background: #ddd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.sub-menu-item:nth-child(3) h2{
-    text-transform: capitalize;
-    margin: 1.5rem 0;
-}
-.sub-menu-item:nth-child(3) .btn{
-    border: 1px solid #000;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-    cursor: pointer;
-    background: #000;
-    color: #fff;
-    transition: all 0.5s ease;
-}
-.sub-menu-item:nth-child(3) .btn:hover{
-    background: transparent;
-    color: #000;
-}
+
+
 .sub-menu-item:nth-child(4){
     width: 50%;
     margin: 0 auto;
@@ -258,10 +248,9 @@
         align-items: center;
         justify-content: center;
     }
-    .navbar-navb > li > a{
+    .navbar-navb  li  a{
         border-bottom: none;
-        margin: 0 0.4rem;
-        padding: 1.7rem 1.8rem 1.7rem 0.8rem;
+        padding: 8px 15px 8px 15px;
         font-size: 0.8rem;
     }
     .sub-menu{
@@ -273,34 +262,26 @@
     }
     .navbar-navb > li:hover .sub-menu{
         display: grid!important;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         padding: 0 5rem;
     }
 
     .sub-menu-sort{
         position: absolute;
-        /* left: 0; */
-        width: 250px;
+       padding: 10px;
+        width: 220px;
         top: 100%;
         background: #f8f8f8;
     }
     .navbar-navb > li:hover .sub-menu-sort{
     display: block;
-    padding: 10px;
+    padding: 10px;  
    border-radius: 10px;
+   
     }
 
 
-
-
-
-    .navbar-navb > li{
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.4s ease;
-    }
-    .navbar-navb > li:hover{
-        border-bottom-color: #000;
-    }
+ 
     .sub-menu-item-sort {
         padding-left: 0 !important;
     }
@@ -421,12 +402,13 @@
   }
 
 
-.owl-prev{
+.owl-prev span{
   position: absolute;
   top: 32%;
   font-size: 60px !important;
  left: -1%;
- 
+
+
 }
 .owl-next{
   position: absolute;
