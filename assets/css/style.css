@@ -500,6 +500,7 @@ img {
 /* newest-section-start=============== */
 #newest-section{
   padding: 50px 0px;
+  background-color: #f3f2f2;
 }
 .newest-header h1{
   text-align: center;
@@ -528,8 +529,13 @@ img {
   align-items: center;
   width: 100%;
   height: auto;
+  border-radius: 15px;
+ position: relative;
 }
-
+.swiper-slide a{
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
 
 
 .swiper-wrapper {
@@ -548,15 +554,15 @@ img {
   padding: 30px 20px;
 }
 
-.swiper-button-next {
+.card_slider .swiper-button-next {
   width: 40px;
   height: 40px;
-  background: var(--white);
+  background: #fff;
   position: absolute;
   border: var(--secondary-border);
   border-radius: 50px;
-  font-size: 20px;
-  padding: 0;
+  font-size: 10px !important;
+  padding: 20px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -619,37 +625,61 @@ img {
   background: var(--white);
   width: 100%;
   height: 100%;
-  border-radius: 5px;
-
- border: 1px solid bisque;
-  /* padding: 20px; */
+  border-radius: 10px !important;
   transition: 0.5s ease;
 }
-
 .newest-authors-img{
-  height: 200px !important  ; 
+  height: 160px !important  ; 
   width: 100%;
+
 }
 .newest-authors-text{
-  padding: 20px ;
+  padding: 0px 0px 15px 0px;
 }
 .newest-authors-img img{
   object-fit: cover;
   width: 100%;
-  height: 200px
+  height: 160px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
 }
 .newest-authors-text-img{
-  width: 50px;
-  height: 50px;
- 
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: auto;
+  margin-top: -30px;
 }
 .newest-authors-text-img img{
   width: 100%;
   object-fit: cover;
-  height: 50px;
+  height: 60px;
   border-radius: 50%;
 }
-
+.newest-authors-text h5{
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.newest-authors-text p{
+  font-size: 15px;
+color: var(--nav-text-color);
+}
+.newest-authors span{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 13px;
+  background-color:#fff;
+  padding: 3px 20px;
+  color: var(--nav-text-color);
+  border-radius: 15px;
+}
+.newest-authors span i{
+ color: orange;
+font-size: 14px;
+}
 @media screen and (max-width: 991px) {
   .card_slider {
     padding: 30px 15px;
